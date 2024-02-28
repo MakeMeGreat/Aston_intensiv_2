@@ -6,7 +6,6 @@ import android.graphics.Color
 import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
-import android.view.animation.RotateAnimation
 import kotlin.properties.Delegates
 
 class RainbowCircleView @JvmOverloads constructor(
@@ -19,15 +18,15 @@ class RainbowCircleView @JvmOverloads constructor(
     private var radius by Delegates.notNull<Float>()
 
     private val colors = listOf(
-       Color.RED,
-        Color.rgb(255, 150,0),
+        Color.RED,
+        Color.rgb(255, 150, 0),
         Color.YELLOW,
         Color.GREEN,
         Color.CYAN,
         Color.BLUE,
         Color.MAGENTA,
 
-    )
+        )
     private val arcAngle = 360f / colors.size
     private val paint = Paint()
 
